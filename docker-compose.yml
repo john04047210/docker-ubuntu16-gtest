@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: john04047210/ubuntu-gtest
     container_name: 'gtest-ubuntu'
     restart: 'no'
     command: /sbin/init
