@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  gtest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 'gtest-ubuntu'
+    restart: 'no'
+    command: /sbin/init
+    privileged: true
+    hostname: gtest
+    domainname: neusoft.co.jp
